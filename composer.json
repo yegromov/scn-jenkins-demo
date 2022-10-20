@@ -1,0 +1,24 @@
+{
+    "name": "yegromov/scn_jenkins_demo",
+    "description": "Jenkins Demo Test Application",
+    "type": "project",
+    "license": "GPL",
+    "autoload": {
+        "psr-4": {
+            "ScnJenkinsDemo\\": [ "src/classes/", "src/tests/"]
+        }
+    },
+    "authors": [
+        {
+            "name": "Yevgeny Gromov",
+            "email": "yagromov@scnsoft.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {        
+        "test": "phpunit"
+    }
+}
