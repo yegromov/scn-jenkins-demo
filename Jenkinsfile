@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git branch: 'main', url: 'https://github.com/yegromov/scn-jenkins-demo'
+                checkout scm
                 sh '''
                     docker build -t scn_jenkins_demo .
                 '''
